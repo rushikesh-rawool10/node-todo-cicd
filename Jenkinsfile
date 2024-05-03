@@ -23,7 +23,7 @@ pipeline {
         }
         stage("Deploy"){
             steps{
-                sh "docker run -d -p 8000:8000 node-app-test-new-v2"
+                sh "docker run -d -p 8000:8000 rushidevops10/node-app-new:latest-v2"
             }
         }
     }
