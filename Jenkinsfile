@@ -23,7 +23,7 @@ pipeline {
         }
         stage("Deploy"){
             steps{
-                sh "docker-compose down && docker-compose up -d"
+                sh "docker run -d -p 8000:8000 rushidevops10/node-app-new:latest"
             }
         }
     }
